@@ -5,7 +5,7 @@
   font-family: Poppins;
   text-decoration: none;
   border: none;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .container {
@@ -35,6 +35,7 @@
     padding: 0;
   }
 }
+
 h1 {
   font-weight: 700;
   font-size: clamp(3.75rem, 3.338rem + 1.88vw, 4.75rem);
@@ -179,24 +180,291 @@ a {
     justify-content: space-between;
     gap: 20px;
     .clb-img {
-      max-width: 550px;
+      max-width: 400px;
       width: 100%;
     }
     .collaborative-text {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      max-width: 486px;
+      width: 100%;
       .clt-icon {
         display: flex;
         align-items: start;
         flex-direction: column;
-        gap: 20px;
-        .clt-icon2{
+        gap: 15px;
+        .clt-icon2 {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 15px;
         }
       }
     }
+  }
+}
+#quick {
+  padding-block: 40px;
+  .quick {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    .quick-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      p {
+        max-width: 542px;
+        width: 100%;
+      }
+      .coment {
+        display: flex;
+        align-items: center;
+        gap: 30%;
+        .coment-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          img {
+            max-width: 400px;
+            width: 100%;
+          }
+        }
+        .coment-car {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          img {
+            max-width: 400px;
+            width: 100%;
+          }
+        }
+      }
+      .btn {
+        background: rgba(2, 137, 122, 1);
+        border-radius: 4px;
+        padding: 13px 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#content {
+  padding-block: 40px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .content-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      .content-card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+        border-radius: 8px;
+        .content-img {
+          width: 100%;
+        }
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding: 5px;
+          max-width: 294px;
+          width: 100%;
+        }
+        p {
+          font-size: clamp(0.5rem, 0.346rem + 0.71vw, 0.875rem);
+        }
+        a {
+          font-size: clamp(0.625rem, 0.265rem + 1.65vw, 1.5rem);
+        }
+        a:focus {
+          color: rgba(2, 137, 122, 1);
+        }
+      }
+    }
+  }
+}
+#price {
+  padding-block: 40px;
+  .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    .price-cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 103px;
+
+      .price-card {
+        transition: 0.8s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(128, 128, 128, 0.6);
+        padding: 10px 15px;
+        border-radius: 15px;
+        gap: 20px;
+        background: rgba(255, 255, 255, 1);
+        .main-date {
+          display: flex;
+          color: rgba(2, 137, 122, 1);
+          .dates {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            p {
+              color: rgba(175, 175, 175, 1);
+            }
+          }
+        }
+        .price-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      .price-card:hover {
+        transform: scale(1.1);
+        background: rgba(2, 137, 122, 1);
+        h1,
+        p,
+        h3,
+        h4 {
+          color: white;
+        }
+        button {
+          background: white;
+          color: rgba(2, 137, 122, 1);
+        }
+      }
+    }
+  }
+}
+#client {
+  padding-block: 40px;
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .client-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      .client-card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.481);
+        padding: 10px;
+        p {
+          color: rgba(115, 115, 115, 1);
+        }
+        .name {
+          display: flex;
+          align-items: start;
+          gap: 10px;
+          .name-text {
+            p {
+              color: rgba(2, 137, 122, 1);
+              max-width: 537px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#join {
+  padding-block: 40px;
+  .join {
+    background: rgba(2, 137, 122, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    .join-text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+      padding: 30px;
+      h2 {
+        color: white;
+      }
+      button {
+        background: white;
+        color: rgba(2, 137, 122, 1);
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+#contact {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .contact-cards {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        .contact-logo {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+        }
+        .cnt-icon {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+      .contact-card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        input {
+          border: 1px solid rgba(176, 167, 167, 0.442);
+          border-radius: 5px;
+          max-width: 325px;
+          width: 100%;
+          max-height: 199px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+#footer {
+  padding-block: 40px;
+  .footer {
+    display: flex;
+    justify-content: center;
   }
 }
